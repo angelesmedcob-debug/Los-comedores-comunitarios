@@ -438,21 +438,31 @@
     </style>
 </head>
 <body>
-    <!-- MARQUESINA DE BIENVENIDA PARA COMEDORES COMUNITARIOS -->
+   <!-- MARQUESINA DE BIENVENIDA - VERSIÓN QUE SÍ SE MUEVE -->
 <div style="background-color: #ff9900; color: white; overflow: hidden; white-space: nowrap; padding: 10px; font-size: 18px;">
-  <span id="mensajeBienvenida">🍽️ ¡Bienvenido a Comedores Comunitarios! Ayudamos a la comunidad con alimentos. 🍲</span>
+    <span id="mensajeBienvenida" style="display: inline-block; position: relative;">🍽️ ¡Bienvenido a Comedores Comunitarios! Ayudamos a la comunidad con alimentos. 🍲</span>
 </div>
 
 <script>
-  let texto = document.getElementById("mensajeBienvenida");
-  let posicion = 0;
-  setInterval(() => {
-    posicion--;
-    texto.style.transform = `translateX(${posicion}px)`;
-    if (posicion < -texto.offsetWidth) {
-      posicion = window.innerWidth;
+    let texto = document.getElementById("mensajeBienvenida");
+    let contenedor = texto.parentElement;
+    let posicion = contenedor.offsetWidth;
+    
+    // Ajustar el ancho del contenedor
+    texto.style.position = "relative";
+    
+    function mover() {
+        posicion--;
+        texto.style.left = posicion + "px";
+        
+        // Cuando el texto desaparezca, lo reiniciamos
+        if (posicion < -texto.offsetWidth) {
+            posicion = contenedor.offsetWidth;
+        }
+        requestAnimationFrame(mover);
     }
-  }, 30);
+    
+    mover();
 </script>
     <header>
         <div class="container">
