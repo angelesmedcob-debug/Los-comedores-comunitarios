@@ -1,0 +1,155 @@
+<section class="blog-section">
+
+```
+<div class="blog-card">
+
+    <div class="blog-header">
+        <h2>🎥 De los datos a la acción</h2>
+        <p class="blog-subtitulo">
+            Más que alimento, creamos comunidad.
+        </p>
+    </div>
+
+    <div class="blog-content">
+
+        <p>
+            Los comedores comunitarios representan mucho más que un espacio para recibir alimentos.
+            Son lugares donde las personas encuentran apoyo, compañía y oportunidades para mejorar
+            su calidad de vida. Nuestra investigación nos permitió comprender que combatir el hambre
+            también significa fortalecer los lazos comunitarios.
+        </p>
+
+        <p>
+            A través de entrevistas, análisis de información y observación de experiencias reales,
+            identificamos que los comedores ayudan a reducir la inseguridad alimentaria y generan
+            un ambiente de pertenencia para quienes más lo necesitan.
+        </p>
+
+        <div class="blog-video">
+            <a href="https://myuvmedu-my.sharepoint.com/:v:/g/personal/a920177357_my_uvm_edu_mx/IQA87v1SrzIRRaEuG_9YioXuAa5TMBgtuNF3Uu4c1fSlIAc?e=3amYbK"
+               target="_blank"
+               class="video-btn">
+                ▶ Ver video del proyecto
+            </a>
+        </div>
+
+        <div class="datos-blog">
+
+            <div class="dato">
+                <h3>🍽️</h3>
+                <span>Comidas</span>
+            </div>
+
+            <div class="dato">
+                <h3>🤝</h3>
+                <span>Comunidad</span>
+            </div>
+
+            <div class="dato">
+                <h3>💚</h3>
+                <span>Solidaridad</span>
+            </div>
+
+        </div>
+
+        <blockquote>
+            "Los comedores comunitarios no solo alimentan personas,
+            también fortalecen comunidades."
+        </blockquote>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<style>
+.blog-section{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.blog-card{
+    background:#ffffff;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    overflow:hidden;
+    border:2px solid #e8f5e9;
+}
+
+.blog-header{
+    background:linear-gradient(135deg,#2e7d32,#43a047);
+    color:white;
+    text-align:center;
+    padding:35px 25px;
+}
+
+.blog-header h2{
+    margin:0;
+    font-size:2rem;
+}
+
+.blog-subtitulo{
+    margin-top:10px;
+    opacity:.95;
+}
+
+.blog-content{
+    padding:30px;
+}
+
+.blog-content p{
+    color:#444;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.blog-video{
+    text-align:center;
+    margin:30px 0;
+}
+
+.video-btn{
+    background:#2e7d32;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:bold;
+    display:inline-block;
+    transition:.3s;
+}
+
+.video-btn:hover{
+    background:#1b5e20;
+    transform:translateY(-2px);
+}
+
+.datos-blog{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:30px 0;
+}
+
+.dato{
+    background:#f1f8e9;
+    padding:20px;
+    border-radius:20px;
+    min-width:140px;
+    text-align:center;
+}
+
+blockquote{
+    background:#e8f5e9;
+    border-left:5px solid #2e7d32;
+    padding:20px;
+    border-radius:12px;
+    font-style:italic;
+    color:#2e7d32;
+    margin-top:20px;
+}
+</style>
